@@ -1,0 +1,19 @@
+*{
+    -fx-background-color: #edd2e0;
+    -fx-font-family: 'Arial Rounded MT Bold';
+}
+
+#title {
+    -fx-font-size: 8em;
+}
+
+#author {
+    -fx-font-size: 4em;
+    -fx-padding: 10px;
+}
+
+TextButton {
+    -fx-font-size: 1.5em;
+    -fx-background-color: #E1AFD1;
+    -fx-effect: innershadow(three-pass-box, black, 2, 0.1, 0, 0);
+}

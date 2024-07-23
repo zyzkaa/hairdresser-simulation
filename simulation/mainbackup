@@ -1,0 +1,47 @@
+package com.example.projekt;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class MainApplication extends Application {
+    int m;
+    int l;
+    int p1, p2, p3, p;
+    @Override
+    public void start(Stage primaryStage) throws IOException {
+//        FXMLLoader mainLoader = new FXMLLoader();
+//        mainLoader.setLocation(getClass().getResource("hello-view.fxml"));
+//        VBox mainVBox = mainLoader.<VBox>load();
+//        FXMLLoader settLoader = new FXMLLoader();
+//        settLoader.setLocation(getClass().getResource("settings.fxml"));
+//        VBox settVBox = settLoader.<VBox>load();
+
+        VBox settVBox = new VBox();
+        settVBox.getChildren().add(new Settings(primaryStage));
+
+
+        primaryStage.setTitle("fryzjer");
+        primaryStage.setResizable(false);
+        Scene mainScene = new Scene(mainVBox, 1200, 700); //SZER WYS
+        Scene settScene = new Scene(settVBox, 1200, 700); //SZER WYS
+        settScene.getStylesheets().add(getClass().getResource("/css/mainStyle.css").toExternalForm());
+
+        primaryStage.setScene(settScene);
+        primaryStage.show();
+
+        primaryStage.setOnCloseRequest((event) -> {
+            System.out.println("Closing Stage");
+        });
+    }
+
+    public static void main(String[] args) {
+        int n;
+        Application.launch();
+    }
+
+}

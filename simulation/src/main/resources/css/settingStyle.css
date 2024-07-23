@@ -1,0 +1,66 @@
+#root{
+    -fx-background-color: #edd2e0;
+    -fx-font-family: 'Arial Rounded MT Bold';
+}
+
+ImageButton {
+    -fx-background-color: #E1AFD1;
+    -fx-effect: innershadow(three-pass-box, black, 2, 0.1, 0, 0);
+}
+
+#top {
+    -fx-padding: 15px;
+}
+
+#top-right {
+    -fx-font-size: 5.5em;
+}
+
+#top-left {
+    -fx-alignment: center-left;
+}
+
+#middleHBox {
+    -fx-alignment: center;
+}
+
+#middleHBox .label {
+    -fx-font-size: 3em;
+}
+
+#middleHBox NumberTextField {
+    -fx-font-size: 1.9em;
+    -fx-pref-width: 100px;
+    -fx-alignment: center;
+    -fx-background-color: #E1AFD1;
+    -fx-highlight-fill: #7469B6;
+    -fx-highlight-text-fill: white;
+    -fx-effect: innershadow(three-pass-box, black, 2, 0.1, 0, 0);
+}
+
+#bottom {
+    -fx-padding: 30px;
+    -fx-alignment: center;
+}
+
+#pBox {
+    -fx-font-size: 2.5em;
+    -fx-padding: 10px 0px 0px 0px;
+    -fx-alignment: center;
+}
+
+#pBox NumberTextField{
+        -fx-font-size: 2em;
+        -fx-pref-width: 60px;
+        -fx-alignment: center;
+        -fx-background-color: #E1AFD1;
+        -fx-highlight-fill: #7469B6;
+        -fx-highlight-text-fill: white;
+        -fx-effect: innershadow(three-pass-box, black, 2, 0.1, 0, 0);
+}
+
+#helpVBox .label{
+    -fx-font-size: 3em;
+    -fx-border-width: 10px;
+    -fx-effect: innershadow(three-pass-box, black, 2, 0.1, 0, 0);
+}
