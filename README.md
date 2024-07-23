@@ -1,2 +1,2 @@
 # hairdresser-simulation
-simple services facility simulation
+simple javafx services facility simulation
